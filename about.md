@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+<p align="center"><img src="/assets/me_smaller.png" alt="Marcus at Amesbury's stonehenge"></p>
+
 I am a research fellow at the [Institute for System Dynamics][1] working on their automotive team. In my PhD I am working in the field of numerical optimization and control theory, with driver assistence systems in hybrid-electric commercial vehicles being the target applications.
 
 Computers have always been fascinating me. I like to do hobby projects with microcontrollers, [small ARM-devices with Linux][2] and FPGAs. Here and there I also contribute to several open-source software projects.
@@ -18,7 +20,8 @@ This site uses
 
 * Static site generator [Jekyll][4]
 * Jekyll templates from [Poole][5]/[Lanyon][6]
-* [Disqus][7] commenting system
+* The [Disqus][7] commenting system
+
 </small>
 
 [1]: http://www.isys.uni-stuttgart.de/mitarbeiter/sonntag/index.en.html "isys staff member page"
