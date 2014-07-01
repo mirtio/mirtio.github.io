@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<p align="center"><img src="/assets/me_smaller.png" alt="Marcus at Amesbury's stonehenge"></p>
+<p align="center"><img src="/assets/me_smaller.jpg" alt="Marcus at Amesbury's stonehenge"></p>
 
 I am a research fellow at the [Institute for System Dynamics][1] working on their automotive team. In my PhD I am working in the field of numerical optimization and control theory, with driver assistence systems in hybrid-electric commercial vehicles being the target applications.
 
