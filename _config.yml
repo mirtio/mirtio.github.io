@@ -11,7 +11,7 @@ title:            MTBlog
 tagline:          "Marcus' Technology Blog"
 description:      'Blog posts about programming, Linux, prototyping and much more.'
 url:              http://mirtio.github.io
-baseurl:          '/'
+baseurl:          'https://mirtio.github.io/'
 paginate:         5
 
 author:

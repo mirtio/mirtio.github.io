@@ -5,7 +5,9 @@ title: About
 
 I am a research fellow at the [Institute for System Dynamics][1] working on their automotive team. In my PhD I am working in the field of numerical optimization and control theory, with driver assistence systems in hybrid-electric commercial vehicles being the target applications.
 
-Computers have always been fascinating me. I like to do hobby projects with microcontrollers, [small ARM-devices with Linux][2] and FPGAs. Here and there I also contribute to several open-source software projects. 
+Computers have always been fascinating me. I like to do hobby projects with microcontrollers, [small ARM-devices with Linux][2] and FPGAs. Here and there I also contribute to several open-source software projects.
+
+Apart from that I am very interested in motor-vehicles, be it old vintage cars or modern passenger vehicles/trucks. It fascinates me how lots of different areas of science come together within such a product and how scientific advancements and governmental regulations have steadily influenced their quality and efficiency.
 
 Also, I am very interested in low-cost home-brew prototyping, such as 3D-printing, PCB milling/development. Some of the hobby projects I do are used for home-automation or [multimedia applications][3].
 
