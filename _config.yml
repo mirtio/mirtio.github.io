@@ -4,7 +4,7 @@ highlighter:      pygments
 
 # Permalinks
 #permalink:        pretty 
-permalink:       /blog/:title
+permalink:       /:title
 
 # Setup
 title:            MTBlog
