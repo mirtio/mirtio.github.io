@@ -1,24 +1,26 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+#permalink:        pretty 
+permalink:       /blog/:title
 
 # Setup
-title:            Lanyon
-tagline:          'A Jekyll theme'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://lanyon.getpoole.com
+title:            MTBlog
+tagline:          "Marcus' Technology Blog"
+description:      'Blog posts about programming, Linux, prototyping and much more.'
+url:              http://mirtio.github.io
 baseurl:          '/'
 paginate:         5
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Marcus Sonntag'
+  url:            https://twitter.com/dimso
 
 # Custom vars
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/lanyon
+  repo:           https://github.com/mirtio/mirtio.github.io
+  

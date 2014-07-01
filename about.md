@@ -3,28 +3,12 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I am a research fellow at the [Institute for System Dynamics][1] working on their automotive team. In my PhD I am working in the field of numerical optimization and control theory, with driver assistence systems in hybrid-electric commercial vehicles being the target applications.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Computers have always been fascinating me. I like to do hobby projects with microcontrollers, [small ARM-devices with Linux][2] and FPGAs. Here and there I also contribute to several open-source software projects. 
 
-There are currently two themes built on Poole:
+Also, I am very interested in low-cost home-brew prototyping, such as 3D-printing, PCB milling/development. Some of the hobby projects I do are used for home-automation or [multimedia applications][3].
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[1]: http://www.isys.uni-stuttgart.de/mitarbeiter/sonntag/index.en.html "isys staff member page"
+[2]: http://home.g8.net/ "Ubuntu based Linux for ARM devices"
+[3]: http://www.autojuwel.de/frames.htm?/pictures.php?cat=iPod%20cradle%20-%20home%20brew "Apple iPod cradle for Audi CD Changer interfaces"

@@ -1,0 +1,60 @@
+diff --git a/core/main.mk b/core/main.mk
+index 9f341b9..ce66295 100644
+--- a/core/main.mk
++++ b/core/main.mk
+@@ -164,7 +164,7 @@ $(info $(space))
+ $(info Please follow the machine setup instructions at)
+ $(info $(space)$(space)$(space)$(space)https://source.android.com/source/initializing.html)
+ $(info ************************************************************)
+-$(error stop)
++#$(error stop)
+ endif
+ 
+ # Check for the current JDK.
+@@ -192,7 +192,7 @@ $(info $(java_version_str).)
+ $(info Please follow the machine setup instructions at)
+ $(info $(space)$(space)$(space)$(space)https://source.android.com/source/download.html)
+ $(info ************************************************************)
+-$(error stop)
++#$(error stop)
+ endif # java version is not OpenJdk
+ else # if requires_openjdk
+ ifneq ($(shell echo '$(java_version_str)' | grep -i openjdk),)
+@@ -203,7 +203,7 @@ $(info You use OpenJDK but only Sun/Oracle JDK is supported.)
+ $(info Please follow the machine setup instructions at)
+ $(info $(space)$(space)$(space)$(space)https://source.android.com/source/download.html)
+ $(info ************************************************************)
+-$(error stop)
++#$(error stop)
+ endif # java version is not Sun Oracle JDK
+ endif # if requires_openjdk
+ 
+@@ -219,7 +219,7 @@ $(info $(space))
+ $(info Please follow the machine setup instructions at)
+ $(info $(space)$(space)$(space)$(space)https://source.android.com/source/download.html)
+ $(info ************************************************************)
+-$(error stop)
++#$(error stop)
+ endif
+ 
+ 
+diff --git a/target/product/sdk.mk b/target/product/sdk.mk
+index 2962fd2..57a92d1 100644
+--- a/target/product/sdk.mk
++++ b/target/product/sdk.mk
+@@ -176,9 +176,9 @@ PRODUCT_LOCALES = \
+ 	zh_TW
+ 
+ # include available languages for TTS in the system image
+--include external/svox/pico/lang/PicoLangDeDeInSystem.mk
+--include external/svox/pico/lang/PicoLangEnGBInSystem.mk
+--include external/svox/pico/lang/PicoLangEnUsInSystem.mk
+--include external/svox/pico/lang/PicoLangEsEsInSystem.mk
+--include external/svox/pico/lang/PicoLangFrFrInSystem.mk
+--include external/svox/pico/lang/PicoLangItItInSystem.mk
++#-include external/svox/pico/lang/PicoLangDeDeInSystem.mk
++#-include external/svox/pico/lang/PicoLangEnGBInSystem.mk
++#-include external/svox/pico/lang/PicoLangEnUsInSystem.mk
++#-include external/svox/pico/lang/PicoLangEsEsInSystem.mk
++#-include external/svox/pico/lang/PicoLangFrFrInSystem.mk
++#-include external/svox/pico/lang/PicoLangItItInSystem.mk
