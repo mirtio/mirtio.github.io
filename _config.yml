@@ -10,6 +10,7 @@ permalink:       /:title
 title:            MTBlog
 tagline:          "Marcus' Technology Blog"
 description:      'Blog posts about programming, Linux, prototyping and much more.'
+keywords:         - programming - linux - android - rapid prototyping - matlab - simulink - engineering - microcontroller - PCB - 3d printing
 url:              http://mirtio.github.io
 baseurl:          'https://mirtio.github.io/'
 paginate:         5
