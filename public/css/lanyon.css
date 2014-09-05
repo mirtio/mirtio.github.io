@@ -120,6 +120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0082c4', e
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2.2em;
   color: #505050;
 }
 .masthead-title a {
