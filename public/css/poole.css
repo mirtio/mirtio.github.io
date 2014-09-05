@@ -235,6 +235,12 @@ img {
   border-radius: 5px;
 }
 
+img.navbar {
+	vertical-align: baseline;
+	display: inline;
+	margin: 0 0 0;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
