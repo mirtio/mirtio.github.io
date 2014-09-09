@@ -18,6 +18,38 @@ on the command line. The former should already be available on most systems and 
 
 The Red Pitaya's initramdisk may be easily grabbed by copying the `uramdisk.image.gz` file from the official SD-card image or from a running Red Pitaya's `/opt` folder.
 
+## How it works
+
+For extraction, the first step is to remove the 64 byte u-boot header from the packed ramdisk which is simply done by using `dd`. Then it is uncompressed using `gunzip` and finally extracted by cpio. The sequence of commands is
+
+```sh
+( dd bs=64 skip=1 count=0; dd bs=4096 ) < $infile > $tempfile1
+cat $tempfile1 | gunzip > $tempfile2
+cd $outfolder; sudo cpio -id --no-absolute-filenames < $tempfile2
+```
+
+Note that the `sudo` invocation of `cpio` is necessary here as most files and folders inside the initramdisk are owned by root.
+The arguments to `cpio` mean
+
+- `-i`: extract
+- `-d`: create leading directories
+- `--no-absolute-filenames`: Don't create files on absolute paths as it may overwrite your system files otherwise!
+
+For repackaging, the steps are essentially reversed. The u-boot header is added by a call to `mkbootimg` instead
+
+```sh
+cd $infolder; sudo find . | sudo cpio -H newc -o > $tempfile1
+cat $tempfile1 | gzip > $tempfile2
+mkimage -A arm -T ramdisk -C gzip -d $tempfile2 $outfile
+```
+
+The arguments to `cpio` mean
+
+- `-o`: create archive
+- `-H newc`: Choose the [newc format][4] for the archive
+
+The following scripts make it easy to automate extraction and repackaging.
+
 ## Extraction
 
 To extract the initramdisk to a folder you may use the following script I provide [here][2]. Simply save it to a file `unmkramdiskimg.sh` and make it executable. You may also download the script by issuing the commands
@@ -27,7 +59,7 @@ To extract the initramdisk to a folder you may use the following script I provid
 
 ## Packaging
 
-For packaging you may use the counter part script from [here][3]. The same applies here as for the extraction script. Type
+For packaging you may use the counterpart script `mkramdiskimg.sh` from [here][3]. The same applies here as for the extraction script. Type
 
     wget https://mirtio.github.io/assets/mkramdiskimg.sh
     chmod u+x mkramdiskimg.sh
@@ -61,3 +93,4 @@ Now your modified image is ready to be used!
 [1]: http://redpitaya.com  "Red Pitaya Website"
 [2]: /assets/unmkramdiskimg.sh "Script file for extracting initramdisk images"
 [3]: /assets/mkramdiskimg.sh "Script file for packaging initramdisk images"
+[4]: http://www.gnu.org/software/cpio/manual/cpio.html "GNU manual for cpio"
