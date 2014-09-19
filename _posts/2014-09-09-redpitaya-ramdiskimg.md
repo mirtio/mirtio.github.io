@@ -1,10 +1,19 @@
 ---
 layout: post
 title: Extracting and Repacking a Red Pitaya's initramdisk
+categories: 
+   - redpitaya 
+   - red pitaya 
+   - u-boot 
+   - mkimage 
+   - extract 
+   - initramdisk 
+   - arm
 comments: true
 ---
 
 It took me some time to figure out on how to quickly extract, modify and then repack a [Red Pitaya's][1] initramdisk without installing a full build environment. In this post I provide some easy to use Linux shell scripts to do just that.
+
 First you will need some tools, i.e.
 
 - cpio
@@ -22,7 +31,7 @@ The Red Pitaya's initramdisk may be easily grabbed by copying the `uramdisk.imag
 
 For extraction, the first step is to remove the 64 byte u-boot header from the packed ramdisk which is simply done by using `dd`. Then it is uncompressed using `gunzip` and finally extracted by cpio. The sequence of commands is
 
-```sh
+```bash
 ( dd bs=64 skip=1 count=0; dd bs=4096 ) < $infile > $tempfile1
 cat $tempfile1 | gunzip > $tempfile2
 cd $outfolder; sudo cpio -id --no-absolute-filenames < $tempfile2
@@ -37,7 +46,7 @@ The arguments to `cpio` mean
 
 For repackaging, the steps are essentially reversed. The u-boot header is added by a call to `mkbootimg` instead
 
-```sh
+```bash
 cd $infolder; sudo find . | sudo cpio -H newc -o > $tempfile1
 cat $tempfile1 | gzip > $tempfile2
 mkimage -A arm -T ramdisk -C gzip -d $tempfile2 $outfile
