@@ -21,8 +21,8 @@ keywords:
    - microcontroller 
    - PCB 
    - 3d printing
-url:              http://mirtio.github.io
-baseurl:          'https://mirtio.github.io/'
+url:              http://sonntam.github.io
+baseurl:          'https://sonntam.github.io/'
 paginate:         5
 # Exclude .bak files from text editors
 exclude:        
@@ -41,5 +41,5 @@ author:
 version:          1.0.0
 
 github:
-  repo:           https://github.com/mirtio/mirtio.github.io
+  repo:           https://github.com/sonntam/sonntam.github.io
   
