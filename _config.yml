@@ -24,6 +24,14 @@ keywords:
 url:              http://mirtio.github.io
 baseurl:          'https://mirtio.github.io/'
 paginate:         5
+# Exclude .bak files from text editors
+exclude:        
+   - Gemfile
+   - Gemfile.lock
+   - "*.bak"
+   - "_drafts/*.bak"
+   - "_posts/*.bak"
+   - servesite.bat
 
 author:
   name:           'Marcus Sonntag'
