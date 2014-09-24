@@ -63,14 +63,14 @@ The following scripts make it easy to automate extraction and repackaging.
 
 To extract the initramdisk to a folder you may use the following script I provide [here][2]. Simply save it to a file `unmkramdiskimg.sh` and make it executable. You may also download the script by issuing the commands
 
-    wget https://mirtio.github.io/assets/unmkramdiskimg.sh
+    wget https://sonntam.github.io/assets/unmkramdiskimg.sh
     chmod u+x unmkramdiskimg.sh
 
 ## Packaging
 
 For packaging you may use the counterpart script `mkramdiskimg.sh` from [here][3]. The same applies here as for the extraction script. Type
 
-    wget https://mirtio.github.io/assets/mkramdiskimg.sh
+    wget https://sonntam.github.io/assets/mkramdiskimg.sh
     chmod u+x mkramdiskimg.sh
 
 to get an executable copy in your current folder.
