@@ -16,6 +16,7 @@ I have been using [node-red](https://nodered.org/) running on a raspberry pi 3 f
 While there are some node-red extension packages available, such as
  - [node-red-contrib-finite-statemachine](https://www.npmjs.com/package/node-red-contrib-finite-statemachine) which offers a basic visualization of your machine but still depends on having the largest part of your machine's logic to be implemented externally in node-red (and thus creating yet again very complex flows)
  - [node-red-contrib-state-machine](https://www.npmjs.com/package/node-red-contrib-state-machine) which is a wrapper around the [javascript state machine package](https://www.npmjs.com/package/javascript-state-machine). Still this lacks intrinsically defined delayed events and nested/compound/parallel states.
+
 none of those had the functionality or user experience I had in mind.
 
 After I had found the very well documented, flexible and well maintained node.js package [xstate](https://xstate.js.org/docs/) that intrinsically offers, at least as far as I can tell, all the functionality needed for modeling [OMG UML](https://www.omg.org/spec/PSSM/About-PSSM/) conform state-machines, I was motivated to write my own [node-red extension package][1].
