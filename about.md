@@ -5,7 +5,7 @@ title: About
 
 <p align="center"><img src="/assets/me_smaller.jpg" alt="Marcus at Amesbury's stonehenge"></p>
 
-I am a research fellow at the [Institute for System Dynamics][1] working on their automotive team. In my PhD I am working in the field of numerical optimization and control theory, with driver assistence systems in hybrid-electric commercial vehicles being the target applications.
+I am an automotive test lab engineer in Sindelfingen and have been working on dyno automation and networking since end of 2014.
 
 Computers have always been fascinating me. I like to do hobby projects with microcontrollers, [small ARM-devices with Linux][2] and FPGAs. Here and there I also contribute to several open-source software projects.
 
@@ -24,7 +24,6 @@ This site uses
 
 </small>
 
-[1]: http://www.isys.uni-stuttgart.de/mitarbeiter/sonntag/index.en.html "isys staff member page"
 [2]: http://home.g8.net/ "Ubuntu based Linux for ARM devices"
 [3]: http://www.autojuwel.de/frames.htm?/pictures.php?cat=iPod%20cradle%20-%20home%20brew "Apple iPod cradle for Audi CD Changer interfaces"
 [4]: https://github.com/jekyll/jekyll
