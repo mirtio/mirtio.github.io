@@ -21,7 +21,7 @@ none of those had the functionality or user experience I had in mind.
 
 After I had found the very well documented, flexible and well maintained node.js package [xstate](https://xstate.js.org/docs/) that intrinsically offers, at least as far as I can tell, all the functionality needed for modeling [OMG UML](https://www.omg.org/spec/PSSM/About-PSSM/) conform state-machines, I was motivated to write my own [node-red extension package][1].
 
-One huge point for me is state-machine visualization. Because state-machines have a strict form it is possible to take a state-machine design and express it in a picture. This gives you an overview of all the functionality of such a machine at a glance and allows for quickly comprehend what is going on. I had to try lots of available packages such as
+One huge point for me is state-machine visualization. Because state-machines have a strict form it is possible to take a state-machine design and express it in a picture. This gives you an overview of all the functionality of such a machine at a glance and allows you to quickly comprehend what is going on. I had to try lots of available packages such as
  - [dagre-d3](https://github.com/dagrejs/dagre-d3) - uses [dagre](https://github.com/dagrejs/dagre) for layouting which is a rewrite of graphviz
  - [cytoscape](https://cytoscape.org/) with different layouting extensions such as [cose-bilkent](https://github.com/cytoscape/cytoscape.js-cose-bilkent). One (failed) try to render a state-machine is shown below. I couldn't get the labels to work correctly without spending too much time on the cytoscape implementation code.
  - [mxGraph](https://github.com/jgraph/mxgraph) (not really open-source)
