@@ -28,8 +28,8 @@ One huge point for me is state-machine visualization. Because state-machines hav
  but all had some disadvantages, mainly in layouting nested graphs or considering label sizes for layouting. I was ready to give up the search and start developing my own package until I found the excellent [state-machine-cat 😺][2] node.js package that currently utilizes [viz.js](https://github.com/mdaines/viz.js) (a port to node.js of the 1991 [graphviz](https://www.graphviz.org/)) as its layouting and rendering core. This offered all the functions I had in mind (well, except for the one I mentioned in [issue #116](https://github.com/sverweij/state-machine-cat/issues/116) - I had to incorporate a nasty workaround) and on top of that is very well documented and easy to use.
 
 Here is a comparison of the output from state-machine-cat versus cytoscape (that I hacked together):
-<p align="center"><img src="/assets/smcat_fsm.png" alt="Render of state machine with state-machine-cat"></p>
-<p align="center"><img src="/assets/cytoscape_fsm.png" alt="One (failed) try to render state machine with cytoscape"></p>
+<p align="center">state-machine-cat render<br><img src="/assets/smcat_fsm.png" alt="Render of state machine with state-machine-cat"></p>
+<p align="center">cytoscape render using the cose-bilkent layouting<br><img src="/assets/cytoscape_fsm.png" alt="One (failed) try to render state machine with cytoscape"></p>
 
 [State-machine-cat][2] is pretty nifty, isn't it?
 
