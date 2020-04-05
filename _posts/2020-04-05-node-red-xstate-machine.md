@@ -26,6 +26,7 @@ One huge point for me is state-machine visualization. Because state-machines hav
  - [cytoscape](https://cytoscape.org/) with different layouting extensions such as [cose-bilkent](https://github.com/cytoscape/cytoscape.js-cose-bilkent). One (failed) try to render a state-machine is shown below. I couldn't get the labels to work correctly without spending too much time on the cytoscape implementation code.
  - [mxGraph](https://github.com/jgraph/mxgraph) (not really open-source)
  - [webcola](https://ialab.it.monash.edu/webcola/) - development seems to have stopped
+ 
  but all had some disadvantages, mainly in layouting nested graphs or considering label sizes for layouting. I was ready to give up the search and start developing my own package until I found the excellent [state-machine-cat 😺][2] node.js package that currently utilizes [viz.js](https://github.com/mdaines/viz.js) (a port to node.js of the 1991 [graphviz](https://www.graphviz.org/)) as its layouting and rendering core. This offered all the functions I had in mind (well, except for the one I mentioned in [issue #116](https://github.com/sverweij/state-machine-cat/issues/116) - I had to incorporate a nasty workaround) and on top of that is very well documented and easy to use.
 
 Here is a comparison of the output from state-machine-cat versus cytoscape (that I hacked together):
