@@ -24,7 +24,7 @@ This site uses
 
 </small>
 
-[2]: http://home.g8.net/ "Ubuntu based Linux for ARM devices"
+[2]: https://www.raspberrypi.org/ "Small ARM devices"
 [3]: http://www.autojuwel.de/frames.htm?/pictures.php?cat=iPod%20cradle%20-%20home%20brew "Apple iPod cradle for Audi CD Changer interfaces"
 [4]: https://github.com/jekyll/jekyll
 [5]: https://github.com/poole
